@@ -11,6 +11,7 @@ echo "Starting Jekyll build"
 
 chmod -R a+w $GITHUB_WORKSPACE
 git config --global --add safe.directory $GITHUB_WORKSPACE
+export GIT_CEILING_DIRECTORIES=$GITHUB_WORKSPACE
 
 ####################################################
 # Build the Jekyll site
