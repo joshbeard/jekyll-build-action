@@ -10,9 +10,8 @@ echo "Starting Jekyll build"
 ####################################################
 
 chmod -R a+w /github/workspace
-chmod -R a+w /__w
 git config --global --add safe.directory /github/workspace
-git config --global --add safe.directory /__w
+echo $GITHUB_WORKSPACE
 
 ####################################################
 # Build the Jekyll site
