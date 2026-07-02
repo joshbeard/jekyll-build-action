@@ -14,14 +14,14 @@ git config --global --add safe.directory $GITHUB_WORKSPACE
 export GIT_CEILING_DIRECTORIES=$GITHUB_WORKSPACE
 
 ####################################################
-# Build the Jekyll site
+# Install dependencies and build the Jekyll site
 ####################################################
 
-jekyll --version
-jekyll build --trace
+bundle install
+bundle exec jekyll build --trace
 
 ####################################################
 # Build completed
 ####################################################
 
-echo "Completed Jekll build"
+echo "Completed Jekyll build"
