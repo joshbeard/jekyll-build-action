@@ -1,5 +1,5 @@
 name: 'Build Jekyll'
-description: 'Local pipeline build of Jekyll content; follow-on actions must publish it somewhere'
+description: 'Build a Jekyll site with Bundler and Git-safe CI setup; output is written to _site/'
 runs:
   using: 'docker'
   image: 'Dockerfile'
